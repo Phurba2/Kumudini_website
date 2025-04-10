@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #003366;
+    padding: 26px 0;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 130px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn.active {
+    border-radius: 5px;
+}
+
+/* Dropdown Styles */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown .nav-btn {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003366;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.rainbow-line {
+    background-image: url('clr.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 5px;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 35px auto 40px;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.about-container h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    transform: translateX(-5px);
+}
+
+#about-content {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+#about-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+#about-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 15px 0 5px;
+}
+
+#about-content p {
+    margin-bottom: 15px;
+}
+
+#about-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.connect-with-us, .get-in-touch {
+    margin: 10px;
+}
+
+.connect-with-us h3, .get-in-touch h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 8px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.get-in-touch p {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.get-in-touch a {
+    color: white;
+    text-decoration: none;
+}
+
+.get-in-touch a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-dropdown .dropdown-content {
+        position: static;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .about-container {
+        margin-top: 250px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Add this to existing about.css */
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.team-member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,377 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-image: url('child.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 26px 0;
+    width: 100%;
+    height: 500px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 130px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn.active {
+    border-radius: 5px;
+}
+
+.rainbow-line {
+    background-image: url('clr.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 5px;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+
+.intro-text {
+    text-align: center;
+    width: 100%;
+    max-width: 1515px;
+    margin: 0;
+    padding-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 5px 10%;
+}
+
+.intro-text p {
+    max-width: 800px;
+    text-align: center;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-bottom: 22px;
+    padding: 10px 20px;
+    background-color: #ea00ff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: hsl(300, 86%, 73%);
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+/* Aim Section */
+.aim-section {
+    text-align: left;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+}
+
+.aim-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.aim-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.aim-section li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    font-weight: 500;
+}
+
+.aim-section li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff00dd;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.aim-section .learn-more-btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Updates Preview */
+.updates-preview {
+    width: 45%;
+    text-align: left;
+}
+
+.updates-preview h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.update-item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.update-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.update-item .date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.update-item .preview {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    width: 45%;
+    text-align: left;
+}
+
+.newsletter-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.newsletter-section img {
+    max-width: 100%;  /* or 80% if you prefer Solution 1 */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+.download-btn {
+    display: block;  /* Keep as block for proper stacking */
+    padding: 10px 20px;  /* Adjust as needed */
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;  /* or 14px if you prefer Solution 2 */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-left: 0;  /* Aligns to the left edge */
+    width: fit-content;  /* Keeps button width natural */
+}
+
+.download-btn:hover {
+    background-color: #005599;
+}
+
+/* Donors Section */
+.donors-section {
+    width: 45%;
+    text-align: left;
+}
+
+.donors-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.donors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.donors-list img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.donors-list img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.connect-with-us, .get-in-touch {
+    margin: 10px;
+}
+
+.connect-with-us h3, .get-in-touch h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 8px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.get-in-touch p {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.get-in-touch a {
+    color: white;
+    text-decoration: none;
+}
+
+.get-in-touch a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .aim-section, .updates-preview, .newsletter-section, .donors-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .newsletter-section img {
+        width: 100%;
+    }
+
+    .donors-list {
+        align-items: center;
+    }
+
+    .donors-list img {
+        width: 120px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

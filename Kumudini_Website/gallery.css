@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #003366;
+    padding: 26px 0;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 130px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn.active {
+    border-radius: 5px;
+}
+
+.rainbow-line {
+    background-image: url('clr.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 5px;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 35px auto 40px;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.gallery-container h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    transform: translateX(-5px);
+}
+
+.gallery-container p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.connect-with-us, .get-in-touch {
+    margin: 10px;
+}
+
+.connect-with-us h3, .get-in-touch h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 8px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.get-in-touch p {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.get-in-touch a {
+    color: white;
+    text-decoration: none;
+}
+
+.get-in-touch a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-container {
+        margin-top: 250px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
